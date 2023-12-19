@@ -7,7 +7,7 @@ const Nav = () => {
  const {items} = useContext(CardContext)
 
   return (
-    <nav className="w-full bg-orange-200 px-6 py-4 text-gray-600 font-bold">
+    <nav className="w-full fixed bg-orange-200 px-6 py-4 text-gray-600 font-bold">
       <div className="flex justify-between items-center bg-orange-200">
        <Link to={"/"}>
        <h1>Wear</h1>
