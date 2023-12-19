@@ -10,7 +10,7 @@ const Products = () => {
     { name: "jumper", price: 60 },
   ];
   return (
-    <div className="grid grid-cols-1 py-10 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    <div className="grid grid-cols-1 pt-20 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {products.map((product) => (
         <Card name={product.name} price={product.price}/>
       ))}
