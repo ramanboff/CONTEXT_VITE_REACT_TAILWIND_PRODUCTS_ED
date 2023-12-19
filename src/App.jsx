@@ -3,10 +3,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Products from "./components/Products";
 import Checkout from "./components/Checkout";
+import { CardProvider } from "./CardContext";
 
 function App() {
   return (
     <>
+    <CardProvider>
       <BrowserRouter>
         <Nav />
         <Container>
@@ -16,6 +18,7 @@ function App() {
           </Routes>
         </Container>
       </BrowserRouter>
+      </CardProvider>
     </>
   );
 }
