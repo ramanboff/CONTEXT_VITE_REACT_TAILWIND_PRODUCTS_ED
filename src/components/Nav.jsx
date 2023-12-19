@@ -14,11 +14,11 @@ const Nav = () => {
         </Link>
         <Link to={"/checkout"}>
           <div className="flex items-end gap-2">
-            <p className="text-sm w-full flex">
+            <div className="flex text-sm items-center w-full max-w-[200px]">
               click to basket icon watch list of products
-            </p>
+            </div>
             <FaShoppingBag className="text-gray-600 hover:text-white duration-300" />
-            <span className="text-3xl">{items.length}</span>
+            <div className="text-4xl">{items.length}</div>
           </div>
         </Link>
       </div>
