@@ -7,17 +7,17 @@ const Card = ({ name, price }) => {
   return (
     <div
      
-      className="bg-orange-100 rounded text-gray-600 font-bold py-6 cursor-pointer"
+      className="bg-orange-100 rounded text-gray-600 font-bold cursor-pointer"
     >
-      <div className="px-6 flex justify-center items-center">
+      <div className="px-10 pt-2 flex justify-center items-center">
         <img src={tshirt} alt="product" />
       </div>
       <div className="flex justify-between items-center
-       px-12 mt-3 ">
+       px-12">
         <h3>{name}</h3>
-        <button  onClick={() => addToCard(name, price)} className="flex gap-1  bg-orange-400 rounded-full px-2 py-1 hover:bg-black hover:text-white duration-300">
+        <button  onClick={() => addToCard(name, price)} className="flex gap-1  bg-orange-400 rounded-full px-3 py-1 hover:bg-black hover:text-white duration-300">
           <p className="text-[14px] ">add</p>
-          <FaShoppingBag   className="text-xl"/>
+          <FaShoppingBag className="text-xl"/>
         </button>
       </div>
       <h4 className="px-12">${price}</h4>
