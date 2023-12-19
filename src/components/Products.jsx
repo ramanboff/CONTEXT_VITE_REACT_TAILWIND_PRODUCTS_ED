@@ -1,5 +1,5 @@
 import Card from "./Card";
-import {v4 as uuidv4} from "uuid"
+import { v4 as uuidv4 } from "uuid";
 
 const Products = () => {
   const products = [
@@ -13,7 +13,7 @@ const Products = () => {
   return (
     <div className="grid grid-cols-1 pt-20 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {products.map((product) => (
-        <Card key={uuidv4} name={product.name} price={product.price}/>
+        <Card key={uuidv4} name={product.name} price={product.price} />
       ))}
     </div>
   );

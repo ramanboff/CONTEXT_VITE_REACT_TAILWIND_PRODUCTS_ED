@@ -8,16 +8,16 @@ import { CardProvider } from "./CardContext";
 function App() {
   return (
     <>
-    <CardProvider>
-      <BrowserRouter>
-        <Nav />
-        <Container>
-          <Routes>
-            <Route path="/" element={<Products />} />
-            <Route path="/checkout" element={<Checkout />} />
-          </Routes>
-        </Container>
-      </BrowserRouter>
+      <CardProvider>
+        <BrowserRouter>
+          <Nav />
+          <Container>
+            <Routes>
+              <Route path="/" element={<Products />} />
+              <Route path="/checkout" element={<Checkout />} />
+            </Routes>
+          </Container>
+        </BrowserRouter>
       </CardProvider>
     </>
   );

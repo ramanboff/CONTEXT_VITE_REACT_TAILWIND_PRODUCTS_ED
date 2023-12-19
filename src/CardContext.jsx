@@ -7,6 +7,7 @@ export function CardProvider({ children }) {
   const [items, setItems] = useState([]);
   const addToCard = (name, price) => {
     setItems((prevState) => [...prevState, { name, price }]);
+    console.log(items);
   };
   //add to card function
 
