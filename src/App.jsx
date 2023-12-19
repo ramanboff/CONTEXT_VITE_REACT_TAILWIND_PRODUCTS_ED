@@ -7,15 +7,15 @@ import Checkout from "./components/Checkout";
 function App() {
   return (
     <>
-    <Nav />
-    <Container>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Products />} />
-          <Route path="/checkout" element={<Checkout />} />
-        </Routes>
+        <Nav />
+        <Container>
+          <Routes>
+            <Route path="/" element={<Products />} />
+            <Route path="/checkout" element={<Checkout />} />
+          </Routes>
+        </Container>
       </BrowserRouter>
-    </Container>
     </>
   );
 }
